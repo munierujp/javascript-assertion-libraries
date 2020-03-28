@@ -40,6 +40,12 @@ assert(!value)
 assert.isNotOk(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeFalsy()
+```
+
 ## Equality
 ### `actual` is same value to `expected`
 - Node.js
