@@ -375,6 +375,12 @@ assert(value > other)
 assert.isAbove(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).toBeGreaterThan(other)
+```
+
 ### `value` is greater than or equal to `other`
 - Node.js
 
@@ -386,6 +392,12 @@ assert(value >= other)
 
 ```js
 assert.isAtLeast(value, other)
+```
+
+- Jest
+
+```js
+expect(value).toBeGreaterThanOrEqual(other)
 ```
 
 ### `value` is less than `other`
@@ -401,6 +413,12 @@ assert(value < other)
 assert.isBelow(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).toBeLessThan(other)
+```
+
 ### `value` is less than or equal to `other`
 - Node.js
 
@@ -412,6 +430,12 @@ assert(value <= other)
 
 ```js
 assert.isAtMost(value, other)
+```
+
+- Jest
+
+```js
+expect(value).toBeLessThanOrEqual(other)
 ```
 
 ## string
