@@ -551,6 +551,12 @@ assert(value.includes(other))
 assert.include(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).toContain(other)
+```
+
 ### `value` does not include `other`
 - Node.js
 
@@ -706,6 +712,12 @@ assert(value.includes(element))
 
 ```js
 assert.include(value, element)
+```
+
+- Jest
+
+```js
+expect(value).toContain(element)
 ```
 
 ### `value` does not include `element`
