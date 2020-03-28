@@ -282,13 +282,13 @@ assert.isNotFalse(value)
 - Node.js
 
 ```js
-assert.isNumber(typeof value, 'number')
+assert.strictEqual(typeof value, 'number')
 ```
 
 - Chai
 
 ```js
-assert.isString(value)
+assert.isNumber(value)
 ```
 
 ### `value` is not number
