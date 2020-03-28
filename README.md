@@ -23,6 +23,12 @@ assert(value)
 assert.isOk(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeTruthy()
+```
+
 ### `value` is falsy
 - Node.js
 
