@@ -600,6 +600,12 @@ assert(value.match(pattern))
 assert.match(value, pattern)
 ```
 
+- Jest
+
+```js
+expect(value).toMatch(pattern)
+```
+
 ### `value` does not match to `pattern`
 - Node.js
 
