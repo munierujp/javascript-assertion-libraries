@@ -812,6 +812,12 @@ assert.strictEqual(typeof value, 'function')
 assert.isFunction(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('function')
+```
+
 ### `value` is not function
 - Node.js
 
@@ -824,6 +830,13 @@ assert.notStrictEqual(typeof value, 'function')
 ```js
 assert.isNotFunction(value)
 ```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('function')
+```
+
 ## Array
 ### `value` is Array
 - Node.js
