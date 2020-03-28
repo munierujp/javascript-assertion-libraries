@@ -166,6 +166,12 @@ assert.strictEqual(value, undefined)
 assert.isUndefined(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeUndefined()
+```
+
 ### `value` is  not `undefined`
 - Node.js
 
