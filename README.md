@@ -128,6 +128,12 @@ assert.strictEqual(value, null)
 assert.isNull(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeNull()
+```
+
 ### `value` is  not `null`
 - Node.js
 
