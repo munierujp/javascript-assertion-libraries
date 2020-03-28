@@ -5,7 +5,7 @@
   - [Assert](https://www.chaijs.com/guide/styles/#assert)
 
 ## Base
-### value is truthy
+### `value` is truthy
 - Node.js
 
 ```js
@@ -22,7 +22,7 @@ assert(value)
 assert.isOk(value)
 ```
 
-### value is falsy
+### `value` is falsy
 - Node.js
 
 ```js
