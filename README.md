@@ -174,3 +174,26 @@ assert(value != undefined)
 ```js
 assert.exists(value)
 ```
+
+## Plain object
+### `value` is plain object
+- Node.js
+
+none
+
+- Chai
+
+```js
+assert.isObject(value)
+```
+
+### `value` is not plain object
+- Node.js
+
+none
+
+- Chai
+
+```js
+assert.isNotObject(value)
+```
