@@ -382,6 +382,131 @@ assert(value <= other)
 assert.isAtMost(value, other)
 ```
 
+## string
+### `value` is string
+- Node.js
+
+```js
+assert.strictEqual(typeof value, 'string')
+```
+
+- Chai
+
+```js
+assert.isString(value)
+```
+
+### `value` is not string
+- Node.js
+
+```js
+assert.notStrictEqual(typeof value, 'string')
+```
+
+- Chai
+
+```js
+assert.isNotString(value)
+```
+
+### `value` is empty
+- Node.js
+
+```js
+
+assert.strictEqual(value.length, 0)
+```
+
+- Chai
+
+```js
+assert.isEmpty(value)
+```
+
+### `value` is not empty
+- Node.js
+
+```js
+
+assert.notStrictEqual(value.length, 0)
+```
+
+- Chai
+
+```js
+assert.isNotEmpty(value)
+```
+
+### `value` has `length`
+- Node.js
+
+```js
+
+assert.strictEqual(value.length, length)
+```
+
+- Chai
+
+```js
+assert.lengthOf(value, length)
+```
+
+### `value` includes `other`
+- Node.js
+
+```js
+
+assert(value.includes(other))
+```
+
+- Chai
+
+```js
+assert.include(value, other)
+```
+
+### `value` does not include `other`
+- Node.js
+
+```js
+
+assert(!value.includes(other))
+```
+
+- Chai
+
+```js
+assert.notInclude(value, other)
+```
+
+### `value` matches to `pattern`
+- Node.js
+
+```js
+
+assert(value.match(pattern))
+```
+
+- Chai
+
+```js
+assert.match(value, pattern)
+```
+
+### `value` does not match to `pattern`
+- Node.js
+
+```js
+
+assert(!value.match(pattern))
+```
+
+- Chai
+
+```js
+assert.notMatch(value, pattern)
+```
+
 ## function
 ### `value` is function
 - Node.js
