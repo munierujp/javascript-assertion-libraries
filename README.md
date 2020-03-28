@@ -408,3 +408,46 @@ assert.notStrictEqual(typeof value, 'function')
 ```js
 assert.isNotFunction(value)
 ```
+
+## Map
+### `value` is empty
+- Node.js
+
+```js
+
+assert.strictEqual(value.size, 0)
+```
+
+- Chai
+
+```js
+assert.isEmpty(value)
+```
+
+### `value` is not empty
+- Node.js
+
+```js
+
+assert.notStrictEqual(value.size, 0)
+```
+
+- Chai
+
+```js
+assert.isNotEmpty(value)
+```
+
+### `value` has `size`
+- Node.js
+
+```js
+
+assert.strictEqual(value.size, size)
+```
+
+- Chai
+
+```js
+assert.lengthOf(value, size)
+```
