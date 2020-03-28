@@ -88,7 +88,7 @@ assert.notDeepStrictEqual(actual, expected)
 
 none
 
-## nullish
+## Existence
 ### `value` is `null`
 - Node.js
 
