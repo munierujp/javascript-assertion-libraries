@@ -87,3 +87,90 @@ assert.notDeepStrictEqual(actual, expected)
 - Chai
 
 none
+
+## nullish
+### `value` is `null`
+- Node.js
+
+```js
+assert.strictEqual(value, null)
+```
+
+- Chai
+
+```js
+assert.isNull(value)
+```
+
+### `value` is  not `null`
+- Node.js
+
+```js
+assert.notStrictEqual(value, null)
+```
+
+- Chai
+
+```js
+assert.isNotNull(value)
+```
+
+### `value` is `undefined`
+- Node.js
+
+```js
+assert.strictEqual(value, undefined)
+```
+
+- Chai
+
+```js
+assert.isUndefined(value)
+```
+
+### `value` is  not `undefined`
+- Node.js
+
+```js
+assert.notStrictEqual(value, undefined)
+```
+
+- Chai
+
+```js
+assert.isDefined(value)
+```
+
+### `value` is `null` or `undefined`
+- Node.js
+
+```js
+assert(value == null)
+```
+
+```js
+assert(value == undefined)
+```
+
+- Chai
+
+```js
+assert.notExists(value)
+```
+
+### `value` is not `null` or `undefined`
+- Node.js
+
+```js
+assert(value != null)
+```
+
+```js
+assert(value != undefined)
+```
+
+- Chai
+
+```js
+assert.exists(value)
+```
