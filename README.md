@@ -381,3 +381,30 @@ assert(value <= other)
 ```js
 assert.isAtMost(value, other)
 ```
+
+## function
+### `value` is function
+- Node.js
+
+```js
+assert.strictEqual(typeof value, 'function')
+```
+
+- Chai
+
+```js
+assert.isFunction(value)
+```
+
+### `value` is not function
+- Node.js
+
+```js
+assert.notStrictEqual(typeof value, 'function')
+```
+
+- Chai
+
+```js
+assert.isNotFunction(value)
+```
