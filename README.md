@@ -3,6 +3,7 @@
 - [Node.js](https://nodejs.org/api/assert.html)
 - [Chai](https://www.chaijs.com/)
   - [Assert](https://www.chaijs.com/guide/styles/#assert)
+- [Jest](https://jestjs.io/)
 
 ## Base
 ### `value` is truthy
