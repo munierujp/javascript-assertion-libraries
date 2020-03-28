@@ -276,3 +276,108 @@ assert.notStrictEqual(value, false)
 ```js
 assert.isNotFalse(value)
 ```
+
+## number
+### `value` is number
+- Node.js
+
+```js
+assert.isNumber(typeof value, 'number')
+```
+
+- Chai
+
+```js
+assert.isString(value)
+```
+
+### `value` is not number
+- Node.js
+
+```js
+assert.notStrictEqual(typeof value, 'number')
+```
+
+- Chai
+
+```js
+assert.isNotNumber(value)
+```
+
+### `value` is `NaN`
+- Node.js
+
+```js
+assert(Number.isNaN(value))
+```
+
+- Chai
+
+```js
+assert.isNaN(value)
+```
+
+### `value` is not `NaN`
+- Node.js
+
+```js
+assert(!Number.isNaN(value))
+```
+
+- Chai
+
+```js
+assert.isNotNaN(value)
+```
+
+### `value` is greater than `other`
+- Node.js
+
+```js
+assert(value > other)
+```
+
+- Chai
+
+```js
+assert.isAbove(value, other)
+```
+
+### `value` is greater than or equal to `other`
+- Node.js
+
+```js
+assert(value >= other)
+```
+
+- Chai
+
+```js
+assert.isAtLeast(value, other)
+```
+
+### `value` is less than `other`
+- Node.js
+
+```js
+assert(value < other)
+```
+
+- Chai
+
+```js
+assert.isBelow(value, other)
+```
+
+### `value` is less than or equal to `other`
+- Node.js
+
+```js
+assert(value <= other)
+```
+
+- Chai
+
+```js
+assert.isAtMost(value, other)
+```
