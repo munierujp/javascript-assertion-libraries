@@ -3,6 +3,7 @@
 - [Node.js](https://nodejs.org/api/assert.html)
 - [Chai](https://www.chaijs.com/)
   - [Assert](https://www.chaijs.com/guide/styles/#assert)
+- [Jest](https://jestjs.io/)
 
 ## Base
 ### `value` is truthy
@@ -22,6 +23,12 @@ assert(value)
 assert.isOk(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeTruthy()
+```
+
 ### `value` is falsy
 - Node.js
 
@@ -39,6 +46,12 @@ assert(!value)
 assert.isNotOk(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeFalsy()
+```
+
 ## Equality
 ### `actual` is strictly equal to `expected`
 - Node.js
@@ -51,6 +64,12 @@ assert.strictEqual(actual, expected)
 
 ```js
 assert.strictEqual(actual, expected)
+```
+
+- Jest
+
+```js
+expect(actual === expected).toBe(true)
 ```
 
 ### `actual` is not strictly equal to `expected`
@@ -66,6 +85,12 @@ assert.notStrictEqual(actual, expected)
 assert.notStrictEqual(actual, expected)
 ```
 
+- Jest
+
+```js
+expect(actual !== expected).toBe(true)
+```
+
 ### `actual` is deeply and strictly equal to `expected` 
 - Node.js
 
@@ -74,6 +99,10 @@ assert.deepStrictEqual(actual, expected)
 ```
 
 - Chai
+
+none
+
+- Jest
 
 none
 
@@ -87,6 +116,78 @@ assert.notDeepStrictEqual(actual, expected)
 - Chai
 
 none
+
+- Jest
+
+none
+
+### `actual` is same value to `expected`
+- Node.js
+
+```js
+assert(Object.is(value, expected))
+```
+
+- Chai
+
+```js
+assert.isOk(Object.is(value, expected))
+```
+
+- Jest
+
+```js
+expect(value).toBe(expected)
+```
+
+### `actual` is not same value to `expected`
+- Node.js
+
+```js
+assert(!Object.is(value, expected))
+```
+
+- Chai
+
+```js
+assert.isNotOk(Object.is(value, expected))
+```
+
+- Jest
+
+```js
+expect(value).not.toBe(expected)
+```
+
+### `actual` is deeply same value to `expected`
+- Node.js
+
+none
+
+- Chai
+
+none
+
+- Jest
+
+```js
+expect(value).toEqual(expected)
+```
+
+### `actual` is not deeply same value to `expected`
+- Node.js
+
+none
+
+- Chai
+
+none
+
+- Jest
+
+```js
+expect(value).not.toEqual(expected)
+```
 
 ## Existence
 ### `value` is `null`
@@ -102,6 +203,12 @@ assert.strictEqual(value, null)
 assert.isNull(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeNull()
+```
+
 ### `value` is  not `null`
 - Node.js
 
@@ -113,6 +220,12 @@ assert.notStrictEqual(value, null)
 
 ```js
 assert.isNotNull(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBeNull()
 ```
 
 ### `value` is `undefined`
@@ -128,6 +241,12 @@ assert.strictEqual(value, undefined)
 assert.isUndefined(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeUndefined()
+```
+
 ### `value` is  not `undefined`
 - Node.js
 
@@ -139,6 +258,12 @@ assert.notStrictEqual(value, undefined)
 
 ```js
 assert.isDefined(value)
+```
+
+- Jest
+
+```js
+expect(value).toBeDefined()
 ```
 
 ### `value` is `null` or `undefined`
@@ -158,6 +283,16 @@ assert(value == undefined)
 assert.notExists(value)
 ```
 
+- Jest
+
+```js
+expect(actual == null).toBe(true)
+```
+
+```js
+expect(actual == undefined).toBe(true)
+```
+
 ### `value` is not `null` or `undefined`
 - Node.js
 
@@ -175,6 +310,16 @@ assert(value != undefined)
 assert.exists(value)
 ```
 
+- Jest
+
+```js
+expect(actual != null).toBe(true)
+```
+
+```js
+expect(actual != undefined).toBe(true)
+```
+
 ## object
 ### `value` is plain object
 - Node.js
@@ -187,6 +332,10 @@ none
 assert.isObject(value)
 ```
 
+- Jest
+
+none
+
 ### `value` is not plain object
 - Node.js
 
@@ -197,6 +346,10 @@ none
 ```js
 assert.isNotObject(value)
 ```
+
+- Jest
+
+none
 
 ## boolean
 ### `value` is boolean
@@ -212,6 +365,12 @@ assert.strictEqual(typeof value, 'boolean')
 assert.isBoolean(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('boolean')
+```
+
 ### `value` is not boolean
 - Node.js
 
@@ -223,6 +382,12 @@ assert.notStrictEqual(typeof value, 'boolean')
 
 ```js
 assert.isNotBoolean(value)
+```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('boolean')
 ```
 
 ### `value` is `true`
@@ -238,6 +403,12 @@ assert.strictEqual(value, true)
 assert.isTrue(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBe(true)
+```
+
 ### `value` is not `true`
 - Node.js
 
@@ -249,6 +420,12 @@ assert.notStrictEqual(value, true)
 
 ```js
 assert.isNotTrue(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBe(true)
 ```
 
 ### `value` is `false`
@@ -264,6 +441,12 @@ assert.strictEqual(value, false)
 assert.isFalse(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBe(false)
+```
+
 ### `value` is not `false`
 - Node.js
 
@@ -275,6 +458,12 @@ assert.notStrictEqual(value, false)
 
 ```js
 assert.isNotFalse(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBe(false)
 ```
 
 ## number
@@ -291,6 +480,12 @@ assert.strictEqual(typeof value, 'number')
 assert.isNumber(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('number')
+```
+
 ### `value` is not number
 - Node.js
 
@@ -302,6 +497,12 @@ assert.notStrictEqual(typeof value, 'number')
 
 ```js
 assert.isNotNumber(value)
+```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('number')
 ```
 
 ### `value` is `NaN`
@@ -317,6 +518,12 @@ assert(Number.isNaN(value))
 assert.isNaN(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeNaN()
+```
+
 ### `value` is not `NaN`
 - Node.js
 
@@ -328,6 +535,12 @@ assert(!Number.isNaN(value))
 
 ```js
 assert.isNotNaN(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBeNaN()
 ```
 
 ### `value` is greater than `other`
@@ -343,6 +556,12 @@ assert(value > other)
 assert.isAbove(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).toBeGreaterThan(other)
+```
+
 ### `value` is greater than or equal to `other`
 - Node.js
 
@@ -354,6 +573,12 @@ assert(value >= other)
 
 ```js
 assert.isAtLeast(value, other)
+```
+
+- Jest
+
+```js
+expect(value).toBeGreaterThanOrEqual(other)
 ```
 
 ### `value` is less than `other`
@@ -369,6 +594,12 @@ assert(value < other)
 assert.isBelow(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).toBeLessThan(other)
+```
+
 ### `value` is less than or equal to `other`
 - Node.js
 
@@ -380,6 +611,12 @@ assert(value <= other)
 
 ```js
 assert.isAtMost(value, other)
+```
+
+- Jest
+
+```js
+expect(value).toBeLessThanOrEqual(other)
 ```
 
 ## string
@@ -396,6 +633,12 @@ assert.strictEqual(typeof value, 'string')
 assert.isString(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('string')
+```
+
 ### `value` is not string
 - Node.js
 
@@ -407,6 +650,12 @@ assert.notStrictEqual(typeof value, 'string')
 
 ```js
 assert.isNotString(value)
+```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('string')
 ```
 
 ### `value` is empty
@@ -423,6 +672,12 @@ assert.strictEqual(value.length, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.length).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -437,6 +692,12 @@ assert.notStrictEqual(value.length, 0)
 assert.isNotEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.length).not.toBe(0)
+```
+
 ### `value` has `length`
 - Node.js
 
@@ -449,6 +710,12 @@ assert.strictEqual(value.length, length)
 
 ```js
 assert.lengthOf(value, length)
+```
+
+- Jest
+
+```js
+expect(value).toHaveLength(length)
 ```
 
 ### `value` includes `other`
@@ -465,6 +732,12 @@ assert(value.includes(other))
 assert.include(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).toContain(other)
+```
+
 ### `value` does not include `other`
 - Node.js
 
@@ -477,6 +750,12 @@ assert(!value.includes(other))
 
 ```js
 assert.notInclude(value, other)
+```
+
+- Jest
+
+```js
+expect(value).not.toContain(other)
 ```
 
 ### `value` matches to `pattern`
@@ -493,6 +772,12 @@ assert(value.match(pattern))
 assert.match(value, pattern)
 ```
 
+- Jest
+
+```js
+expect(value).toMatch(pattern)
+```
+
 ### `value` does not match to `pattern`
 - Node.js
 
@@ -505,6 +790,12 @@ assert(!value.match(pattern))
 
 ```js
 assert.notMatch(value, pattern)
+```
+
+- Jest
+
+```js
+expect(value).not.toMatch(pattern)
 ```
 
 ## function
@@ -521,6 +812,12 @@ assert.strictEqual(typeof value, 'function')
 assert.isFunction(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('function')
+```
+
 ### `value` is not function
 - Node.js
 
@@ -533,6 +830,13 @@ assert.notStrictEqual(typeof value, 'function')
 ```js
 assert.isNotFunction(value)
 ```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('function')
+```
+
 ## Array
 ### `value` is Array
 - Node.js
@@ -547,6 +851,12 @@ assert(Array.isArray(value))
 assert.isArray(value)
 ```
 
+- Jest
+
+```js
+expect(Array.isArray(value)).toBe(true)
+```
+
 ### `value` is not Array
 - Node.js
 
@@ -558,6 +868,12 @@ assert(!Array.isArray(value))
 
 ```js
 assert.isNotArray(value)
+```
+
+- Jest
+
+```js
+expect(Array.isArray(value)).toBe(false)
 ```
 
 ### `value` is empty
@@ -574,6 +890,12 @@ assert.strictEqual(value.length, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.length).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -586,6 +908,12 @@ assert.notStrictEqual(value.length, 0)
 
 ```js
 assert.isNotEmpty(value)
+```
+
+- Jest
+
+```js
+expect(value.length).not.toBe(0)
 ```
 
 ### `value` has `length`
@@ -602,6 +930,12 @@ assert.strictEqual(value.length, length)
 assert.lengthOf(value, length)
 ```
 
+- Jest
+
+```js
+expect(value).toHaveLength(length)
+```
+
 ### `value` includes `element`
 - Node.js
 
@@ -616,6 +950,12 @@ assert(value.includes(element))
 assert.include(value, element)
 ```
 
+- Jest
+
+```js
+expect(value).toContain(element)
+```
+
 ### `value` does not include `element`
 - Node.js
 
@@ -628,6 +968,12 @@ assert(!value.includes(element))
 
 ```js
 assert.notInclude(value, element)
+```
+
+- Jest
+
+```js
+expect(value).not.toContain(element)
 ```
 
 ## Set
@@ -645,6 +991,12 @@ assert.strictEqual(value.size, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -659,6 +1011,12 @@ assert.notStrictEqual(value.size, 0)
 assert.isNotEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).not.toBe(0)
+```
+
 ### `value` has `size`
 - Node.js
 
@@ -671,6 +1029,12 @@ assert.strictEqual(value.size, size)
 
 ```js
 assert.lengthOf(value, size)
+```
+
+- Jest
+
+```js
+expect(value.size).toBe(size)
 ```
 
 ## Map
@@ -688,6 +1052,12 @@ assert.strictEqual(value.size, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -702,6 +1072,12 @@ assert.notStrictEqual(value.size, 0)
 assert.isNotEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).not.toBe(0)
+```
+
 ### `value` has `size`
 - Node.js
 
@@ -714,4 +1090,10 @@ assert.strictEqual(value.size, size)
 
 ```js
 assert.lengthOf(value, size)
+```
+
+- Jest
+
+```js
+expect(value.size).toBe(size)
 ```
