@@ -408,6 +408,102 @@ assert.notStrictEqual(typeof value, 'function')
 ```js
 assert.isNotFunction(value)
 ```
+## Array
+### `value` is Array
+- Node.js
+
+```js
+assert(Array.isArray(value))
+```
+
+- Chai
+
+```js
+assert.isArray(value)
+```
+
+### `value` is not Array
+- Node.js
+
+```js
+assert(!Array.isArray(value))
+```
+
+- Chai
+
+```js
+assert.isNotArray(value)
+```
+
+### `value` is empty
+- Node.js
+
+```js
+
+assert.strictEqual(value.length, 0)
+```
+
+- Chai
+
+```js
+assert.isEmpty(value)
+```
+
+### `value` is not empty
+- Node.js
+
+```js
+
+assert.notStrictEqual(value.length, 0)
+```
+
+- Chai
+
+```js
+assert.isNotEmpty(value)
+```
+
+### `value` has `length`
+- Node.js
+
+```js
+
+assert.strictEqual(value.length, length)
+```
+
+- Chai
+
+```js
+assert.lengthOf(value, length)
+```
+
+### `value` includes `element`
+- Node.js
+
+```js
+
+assert(value.includes(element))
+```
+
+- Chai
+
+```js
+assert.include(value, element)
+```
+
+### `value` does not include `element`
+- Node.js
+
+```js
+
+assert(!value.includes(element))
+```
+
+- Chai
+
+```js
+assert.notInclude(value, element)
+```
 
 ## Set
 ### `value` is empty
