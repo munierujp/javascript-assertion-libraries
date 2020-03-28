@@ -53,25 +53,6 @@ expect(value).toBeFalsy()
 ```
 
 ## Equality
-### `actual` is same value to `expected`
-- Node.js
-
-```js
-assert(Object.is(value, expected))
-```
-
-- Chai
-
-```js
-assert.isOk(Object.is(value, expected))
-```
-
-- Jest
-
-```js
-expect(value1).toBe(expected)
-```
-
 ### `actual` is strictly equal to `expected`
 - Node.js
 
@@ -119,6 +100,40 @@ assert.notDeepStrictEqual(actual, expected)
 - Chai
 
 none
+
+### `actual` is same value to `expected`
+- Node.js
+
+```js
+assert(Object.is(value, expected))
+```
+
+- Chai
+
+```js
+assert.isOk(Object.is(value, expected))
+```
+
+- Jest
+
+```js
+expect(value).toBe(expected)
+```
+
+### `actual` is deeply same value to `expected`
+- Node.js
+
+none
+
+- Chai
+
+none
+
+- Jest
+
+```js
+expect(value).toEqual(expected)
+```
 
 ## Existence
 ### `value` is `null`
