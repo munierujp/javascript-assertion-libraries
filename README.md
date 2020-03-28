@@ -197,3 +197,82 @@ none
 ```js
 assert.isNotObject(value)
 ```
+
+## boolean
+### `value` is boolean
+- Node.js
+
+```js
+assert.strictEqual(typeof value, 'boolean')
+```
+
+- Chai
+
+```js
+assert.isBoolean(value)
+```
+
+### `value` is not boolean
+- Node.js
+
+```js
+assert.notStrictEqual(typeof value, 'boolean')
+```
+
+- Chai
+
+```js
+assert.isNotBoolean(value)
+```
+
+### `value` is `true`
+- Node.js
+
+```js
+assert.strictEqual(value, true)
+```
+
+- Chai
+
+```js
+assert.isTrue(value)
+```
+
+### `value` is not `true`
+- Node.js
+
+```js
+assert.notStrictEqual(value, true)
+```
+
+- Chai
+
+```js
+assert.isNotTrue(value)
+```
+
+### `value` is `false`
+- Node.js
+
+```js
+assert.strictEqual(value, false)
+```
+
+- Chai
+
+```js
+assert.isFalse(value)
+```
+
+### `value` is not `false`
+- Node.js
+
+```js
+assert.notStrictEqual(value, false)
+```
+
+- Chai
+
+```js
+assert.isNotFalse(value)
+```
