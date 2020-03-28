@@ -991,6 +991,12 @@ assert.strictEqual(value.size, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -1005,6 +1011,12 @@ assert.notStrictEqual(value.size, 0)
 assert.isNotEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).not.toBe(0)
+```
+
 ### `value` has `size`
 - Node.js
 
@@ -1017,6 +1029,12 @@ assert.strictEqual(value.size, size)
 
 ```js
 assert.lengthOf(value, size)
+```
+
+- Jest
+
+```js
+expect(value.size).toBe(size)
 ```
 
 ## Map
@@ -1034,6 +1052,12 @@ assert.strictEqual(value.size, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -1048,6 +1072,12 @@ assert.notStrictEqual(value.size, 0)
 assert.isNotEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.size).not.toBe(0)
+```
+
 ### `value` has `size`
 - Node.js
 
@@ -1060,4 +1090,10 @@ assert.strictEqual(value.size, size)
 
 ```js
 assert.lengthOf(value, size)
+```
+
+- Jest
+
+```js
+expect(value.size).toBe(size)
 ```
