@@ -367,6 +367,12 @@ assert(Number.isNaN(value))
 assert.isNaN(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBeNaN()
+```
+
 ### `value` is not `NaN`
 - Node.js
 
