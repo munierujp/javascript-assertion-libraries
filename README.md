@@ -175,7 +175,7 @@ assert(value != undefined)
 assert.exists(value)
 ```
 
-## Plain object
+## object
 ### `value` is plain object
 - Node.js
 
