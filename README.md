@@ -66,6 +66,12 @@ assert.strictEqual(actual, expected)
 assert.strictEqual(actual, expected)
 ```
 
+- Jest
+
+```js
+expect(actual === expected).toBe(true)
+```
+
 ### `actual` is not strictly equal to `expected`
 - Node.js
 
@@ -79,6 +85,12 @@ assert.notStrictEqual(actual, expected)
 assert.notStrictEqual(actual, expected)
 ```
 
+- Jest
+
+```js
+expect(actual !== expected).toBe(true)
+```
+
 ### `actual` is deeply and strictly equal to `expected` 
 - Node.js
 
@@ -90,6 +102,10 @@ assert.deepStrictEqual(actual, expected)
 
 none
 
+- Jest
+
+none
+
 ### `actual` is not deeply and strictly equal to `expected` 
 - Node.js
 
@@ -98,6 +114,10 @@ assert.notDeepStrictEqual(actual, expected)
 ```
 
 - Chai
+
+none
+
+- Jest
 
 none
 
