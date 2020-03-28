@@ -1,4 +1,4 @@
-# javascript-assertion-libraries
+# JavaScript Assertion Libraries
 ## Libraries
 - [Node.js](https://nodejs.org/api/assert.html)
 - [Chai](https://www.chaijs.com/)
