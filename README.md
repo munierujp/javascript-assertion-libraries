@@ -851,6 +851,12 @@ assert(Array.isArray(value))
 assert.isArray(value)
 ```
 
+- Jest
+
+```js
+expect(Array.isArray(value)).toBe(true)
+```
+
 ### `value` is not Array
 - Node.js
 
@@ -862,6 +868,12 @@ assert(!Array.isArray(value))
 
 ```js
 assert.isNotArray(value)
+```
+
+- Jest
+
+```js
+expect(Array.isArray(value)).toBe(false)
 ```
 
 ### `value` is empty
@@ -878,6 +890,12 @@ assert.strictEqual(value.length, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.length).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -890,6 +908,12 @@ assert.notStrictEqual(value.length, 0)
 
 ```js
 assert.isNotEmpty(value)
+```
+
+- Jest
+
+```js
+expect(value.length).not.toBe(0)
 ```
 
 ### `value` has `length`
@@ -944,6 +968,12 @@ assert(!value.includes(element))
 
 ```js
 assert.notInclude(value, element)
+```
+
+- Jest
+
+```js
+expect(value).not.toContain(element)
 ```
 
 ## Set
