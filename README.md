@@ -628,6 +628,12 @@ assert.strictEqual(value.length, length)
 assert.lengthOf(value, length)
 ```
 
+- Jest
+
+```js
+expect(value).toHaveLength(length)
+```
+
 ### `value` includes `element`
 - Node.js
 
