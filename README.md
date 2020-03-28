@@ -633,6 +633,12 @@ assert.strictEqual(typeof value, 'string')
 assert.isString(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('string')
+```
+
 ### `value` is not string
 - Node.js
 
@@ -644,6 +650,12 @@ assert.notStrictEqual(typeof value, 'string')
 
 ```js
 assert.isNotString(value)
+```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('string')
 ```
 
 ### `value` is empty
@@ -660,6 +672,12 @@ assert.strictEqual(value.length, 0)
 assert.isEmpty(value)
 ```
 
+- Jest
+
+```js
+expect(value.length).toBe(0)
+```
+
 ### `value` is not empty
 - Node.js
 
@@ -672,6 +690,12 @@ assert.notStrictEqual(value.length, 0)
 
 ```js
 assert.isNotEmpty(value)
+```
+
+- Jest
+
+```js
+expect(value.length).not.toBe(0)
 ```
 
 ### `value` has `length`
@@ -728,6 +752,12 @@ assert(!value.includes(other))
 assert.notInclude(value, other)
 ```
 
+- Jest
+
+```js
+expect(value).not.toContain(other)
+```
+
 ### `value` matches to `pattern`
 - Node.js
 
@@ -760,6 +790,12 @@ assert(!value.match(pattern))
 
 ```js
 assert.notMatch(value, pattern)
+```
+
+- Jest
+
+```js
+expect(value).not.toMatch(pattern)
 ```
 
 ## function
