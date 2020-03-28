@@ -222,6 +222,12 @@ assert.notStrictEqual(value, null)
 assert.isNotNull(value)
 ```
 
+- Jest
+
+```js
+expect(value).not.toBeNull()
+```
+
 ### `value` is `undefined`
 - Node.js
 
@@ -277,6 +283,16 @@ assert(value == undefined)
 assert.notExists(value)
 ```
 
+- Jest
+
+```js
+expect(actual == null).toBe(true)
+```
+
+```js
+expect(actual == undefined).toBe(true)
+```
+
 ### `value` is not `null` or `undefined`
 - Node.js
 
@@ -292,6 +308,16 @@ assert(value != undefined)
 
 ```js
 assert.exists(value)
+```
+
+- Jest
+
+```js
+expect(actual != null).toBe(true)
+```
+
+```js
+expect(actual != undefined).toBe(true)
 ```
 
 ## object
