@@ -41,6 +41,25 @@ assert.isNotOk(value)
 ```
 
 ## Equality
+### `actual` is same value to `expected`
+- Node.js
+
+```js
+assert(Object.is(value, expected))
+```
+
+- Chai
+
+```js
+assert.isOk(Object.is(value, expected))
+```
+
+- Jest
+
+```js
+expect(value1).toBe(expected)
+```
+
 ### `actual` is strictly equal to `expected`
 - Node.js
 
