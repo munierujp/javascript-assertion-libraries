@@ -38,3 +38,52 @@ assert(!value)
 ```js
 assert.isNotOk(value)
 ```
+
+## Equality
+### `actual` is strictly equal to `expected`
+- Node.js
+
+```js
+assert.strictEqual(actual, expected)
+```
+
+- Chai
+
+```js
+assert.strictEqual(actual, expected)
+```
+
+### `actual` is not strictly equal to `expected`
+- Node.js
+
+```js
+assert.notStrictEqual(actual, expected)
+```
+
+- Chai
+
+```js
+assert.notStrictEqual(actual, expected)
+```
+
+### `actual` is deeply and strictly equal to `expected` 
+- Node.js
+
+```js
+assert.deepStrictEqual(actual, expected)
+```
+
+- Chai
+
+none
+
+### `actual` is not deeply and strictly equal to `expected` 
+- Node.js
+
+```js
+assert.notDeepStrictEqual(actual, expected)
+```
+
+- Chai
+
+none
