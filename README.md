@@ -332,6 +332,10 @@ none
 assert.isObject(value)
 ```
 
+- Jest
+
+none
+
 ### `value` is not plain object
 - Node.js
 
@@ -342,6 +346,10 @@ none
 ```js
 assert.isNotObject(value)
 ```
+
+- Jest
+
+none
 
 ## boolean
 ### `value` is boolean
