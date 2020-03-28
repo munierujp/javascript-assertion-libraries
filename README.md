@@ -365,6 +365,12 @@ assert.strictEqual(typeof value, 'boolean')
 assert.isBoolean(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('boolean')
+```
+
 ### `value` is not boolean
 - Node.js
 
@@ -376,6 +382,12 @@ assert.notStrictEqual(typeof value, 'boolean')
 
 ```js
 assert.isNotBoolean(value)
+```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('boolean')
 ```
 
 ### `value` is `true`
@@ -391,6 +403,12 @@ assert.strictEqual(value, true)
 assert.isTrue(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBe(true)
+```
+
 ### `value` is not `true`
 - Node.js
 
@@ -402,6 +420,12 @@ assert.notStrictEqual(value, true)
 
 ```js
 assert.isNotTrue(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBe(true)
 ```
 
 ### `value` is `false`
@@ -417,6 +441,12 @@ assert.strictEqual(value, false)
 assert.isFalse(value)
 ```
 
+- Jest
+
+```js
+expect(value).toBe(false)
+```
+
 ### `value` is not `false`
 - Node.js
 
@@ -428,6 +458,12 @@ assert.notStrictEqual(value, false)
 
 ```js
 assert.isNotFalse(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBe(false)
 ```
 
 ## number
