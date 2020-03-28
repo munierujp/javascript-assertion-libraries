@@ -480,6 +480,12 @@ assert.strictEqual(typeof value, 'number')
 assert.isNumber(value)
 ```
 
+- Jest
+
+```js
+expect(typeof value).toBe('number')
+```
+
 ### `value` is not number
 - Node.js
 
@@ -491,6 +497,12 @@ assert.notStrictEqual(typeof value, 'number')
 
 ```js
 assert.isNotNumber(value)
+```
+
+- Jest
+
+```js
+expect(typeof value).not.toBe('number')
 ```
 
 ### `value` is `NaN`
@@ -523,6 +535,12 @@ assert(!Number.isNaN(value))
 
 ```js
 assert.isNotNaN(value)
+```
+
+- Jest
+
+```js
+expect(value).not.toBeNaN()
 ```
 
 ### `value` is greater than `other`
