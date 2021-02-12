@@ -3,6 +3,7 @@
 - [Node.js](https://nodejs.org/api/assert.html)
 - [Chai](https://www.chaijs.com/)
   - [Assert](https://www.chaijs.com/guide/styles/#assert)
+- [Jasmine](https://jasmine.github.io/)
 - [Jest](https://jestjs.io/)
 
 ## Base
